@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">TruthStory</string>
+    <string name="title_activity_main">TruthStory</string>
+    <string name="package_name">com.truestory.book</string>
+    <string name="custom_url_scheme">com.truestory.book</string>
+</resources>

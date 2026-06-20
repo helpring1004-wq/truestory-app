@@ -1,0 +1,104 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f1117;
+  --panel: #1a1f2b;
+  --text: #e9edf5;
+  --muted: #9aa3b2;
+  --accent: #5f8bff;
+  --danger: #ff5f7a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.panel {
+  background: var(--panel);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 6px;
+  font-size: 0.9rem;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font: inherit;
+}
+
+input,
+textarea {
+  background: #121622;
+  color: var(--text);
+}
+
+button {
+  margin-top: 12px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.entry-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.entry-item {
+  background: #121622;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.entry-title {
+  margin: 0 0 4px;
+}
+
+.entry-time {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.entry-content {
+  white-space: pre-wrap;
+}
+
+.delete-btn {
+  background: var(--danger);
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>진실의 책</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>진실의 책</h1>
+        <p>마음속 진실을 한 장씩 기록해 보세요.</p>
+      </header>
+
+      <section class="panel">
+        <h2>새 페이지 작성</h2>
+        <form id="entry-form">
+          <label for="title">제목</label>
+          <input id="title" name="title" type="text" maxlength="80" required />
+
+          <label for="content">내용</label>
+          <textarea id="content" name="content" maxlength="2000" rows="6" required></textarea>
+
+          <button type="submit">기록하기</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>기록 목록</h2>
+        <ul id="entry-list" class="entry-list"></ul>
+      </section>
+    </main>
+
+    <template id="entry-template">
+      <li class="entry-item">
+        <h3 class="entry-title"></h3>
+        <time class="entry-time"></time>
+        <p class="entry-content"></p>
+        <button class="delete-btn" type="button">삭제</button>
+      </li>
+    </template>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

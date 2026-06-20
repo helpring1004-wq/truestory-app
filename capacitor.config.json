@@ -1,0 +1,6 @@
+{
+  "appId": "com.truestory.book",
+  "appName": "TruthStory",
+  "webDir": "web",
+  "bundledWebRuntime": false
+}

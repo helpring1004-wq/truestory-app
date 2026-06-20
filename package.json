@@ -1,0 +1,24 @@
+{
+  "name": "truestory-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Truth Book app packaged for Android with Capacitor",
+  "scripts": {
+    "android:add": "npx cap add android",
+    "android:sync": "npx cap sync android",
+    "android:open": "npx cap open android",
+    "check:syntax": "node --check ./web/lib/truthBook.js && node --check ./web/app.js",
+    "check:type": "tsc --noEmit",
+    "test": "node --test ./tests/truthBook.test.mjs"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.0",
+    "@capacitor/core": "^7.4.0",
+    "truestory-app": "file:"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.0",
+    "typescript": "^5.9.2"
+  }
+}
