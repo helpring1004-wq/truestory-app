@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>진실의 책</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#2d251f" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
   </head>
   <body>
     <main id="app">
@@ -48,5 +53,12 @@
 
     <script src="./quotes.js"></script>
     <script src="./app.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./sw.js").catch(function(err) {
+          console.error("SW failed:", err);
+        });
+      }
+    </script>
   </body>
 </html>

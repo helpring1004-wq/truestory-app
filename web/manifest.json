@@ -1,0 +1,19 @@
+{
+  "name": "진실의 책",
+  "short_name": "진실의책",
+  "description": "페이지를 펼치면 마음에 닿는 글귀가 나오는 책",
+  "start_url": "/truestory-app/",
+  "display": "standalone",
+  "background_color": "#0b0c10",
+  "theme_color": "#2d251f",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "scope": "/truestory-app/"
+}
